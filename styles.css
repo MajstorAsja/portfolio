@@ -165,7 +165,8 @@ footer { max-width: 1440px; min-height: 130px; margin: auto; padding: 2rem clamp
   .hero { display: block; min-height: auto; padding-top: 1.65rem; padding-right: max(1.35rem, env(safe-area-inset-right)); padding-bottom: 2.5rem; padding-left: max(1rem, env(safe-area-inset-left)); }
   .hero::after { content: ""; display: block; clear: both; }
   .hero__copy, .hero__bio { display: block; }
-  .hero .eyebrow { margin-bottom: .4rem; }
+  .hero .eyebrow { gap: .55rem; margin-bottom: .4rem; white-space: nowrap; font-size: .7rem; letter-spacing: .11em; }
+  .hero .eyebrow > span:first-child { width: 2rem; }
   .hero h1 { font-size: clamp(2.8rem, 12.5vw, 4rem); }
   .hero__bio { margin: 1.15rem 0 0; }
   .hero__bio p { font-size: 1rem; line-height: 1.52; }
@@ -174,7 +175,7 @@ footer { max-width: 1440px; min-height: 130px; margin: auto; padding: 2rem clamp
   .study-popover::before { display: none; }
   .study-popover__row { grid-template-columns: 5.4rem 1fr; gap: .75rem; }
   .study-term:hover .study-popover, .study-term:focus .study-popover, .study-term:focus-within .study-popover { transform: translateY(0) scale(1); }
-  .portrait-stage { float: right; width: min(33vw, 145px); max-width: none; margin: 1.1rem .55rem .8rem .9rem; padding: .35rem 0 .8rem; transform: translateY(5px); }
+  .portrait-stage { float: right; width: min(33vw, 145px); max-width: none; margin: 3.1rem .55rem .8rem .9rem; padding: .35rem 0 .8rem; transform: translateY(5px); }
   .portrait-visual { width: 100%; height: clamp(180px, 50vw, 225px); }
   .sticker { font-size: .5rem; scale: .68; }.sticker--one { left: -.65rem; top: .1rem; }.sticker--two { display: none; }.orbit { left: -.5rem; top: -.4rem; font-size: 1.65rem; }.hand-note { left: .1rem; bottom: -.15rem; font-size: .68rem; }
   .section-heading { align-items: start; flex-direction: column; }.project-grid { grid-template-columns: 1fr; }.project-card:last-child { grid-column: auto; }.project-card__visual { min-height: 280px; }

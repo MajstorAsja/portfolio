@@ -2,11 +2,16 @@ import { DotLottie } from 'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-w
 
 const trigger = document.querySelector('#asja-cat-trigger');
 let entranceIndex = 0;
-const entrances = ['bottom', 'left', 'top'];
+const desktopEntrances = ['bottom', 'left', 'top'];
+const mobileEntrances = ['bottom', 'top'];
 const activeCats = new Set();
 
 trigger.addEventListener('click', event => {
   event.preventDefault();
+
+  const entrances = window.matchMedia('(max-width: 700px)').matches
+    ? mobileEntrances
+    : desktopEntrances;
 
   // Keep one active cat per entrance. Extra clicks wait until one finishes.
   if (activeCats.size >= entrances.length) return;
