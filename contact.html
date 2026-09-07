@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <meta name="description" content="Get in touch with Asja.">
+  <title>Let’s talk — Asja</title>
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=26">
+</head>
+<body class="contact-page">
+  <div class="ticker" aria-label="About Asja">
+    <div class="ticker__track">
+      <span>✦ SAY HELLO</span><span>♡ LET’S MAKE SOMETHING USEFUL</span><span>✦ OPEN TO GOOD IDEAS</span>
+      <span aria-hidden="true">✦ SAY HELLO</span><span aria-hidden="true">♡ LET’S MAKE SOMETHING USEFUL</span><span aria-hidden="true">✦ OPEN TO GOOD IDEAS</span>
+    </div>
+  </div>
+
+  <header class="contact-header">
+    <a class="brand" href="index.html" aria-label="Asja, back to home"><span class="brand__mark">A</span><span>ASJA</span></a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back home</a>
+  </header>
+
+  <main class="contact-main">
+    <p class="eyebrow"><span></span> Get in touch</p>
+    <div class="contact-cat" aria-hidden="true"><canvas id="loading-cat" width="400" height="400"></canvas></div>
+    <h1 class="contact-title">Let’s talk.</h1>
+    <button class="email-link" type="button" aria-label="Copy Asja's email address to the clipboard">
+      <span class="email-link__content">
+        <img class="email-link__image" src="assets/email-label.png" alt="">
+        <span class="email-link__copied" aria-hidden="true">Copied!</span>
+      </span>
+      <svg class="email-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+        <path d="M16 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h1"></path>
+      </svg>
+    </button>
+    <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true">
+      <span class="copy-toast__icon" aria-hidden="true">✓</span>
+      <span>Email copied to clipboard</span>
+    </div>
+  </main>
+
+  <script type="module" src="contact.js?v=3"></script>
+</body>
+</html>
