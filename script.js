@@ -47,7 +47,9 @@ trigger.addEventListener('click', event => {
   void cat.offsetWidth;
 
   requestAnimationFrame(() => {
-    cat.classList.add('is-visible');
+    requestAnimationFrame(() => {
+      cat.classList.add('is-visible');
+    });
   });
 
   let removed = false;
@@ -66,7 +68,11 @@ trigger.addEventListener('click', event => {
   });
 
   window.setTimeout(() => {
-    cat.classList.remove('is-visible');
+    cat.classList.add('is-returning');
+    void cat.offsetWidth;
+    requestAnimationFrame(() => {
+      cat.classList.remove('is-visible');
+    });
   }, 2500);
 
   // Fallback cleanup in case a browser suppresses transition events.
